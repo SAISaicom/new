@@ -1,0 +1,95 @@
+/* تنسيقات عامة للجسم */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* خلفية الفيديو */
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+}
+
+.overlay h1, .overlay p {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    transition: text-shadow 0.3s ease;
+}
+
+/* قسم الترحيب */
+.welcome-section {
+    padding: 50px;
+    background-color: #f7f7f7;
+}
+
+.cta {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* تنسيقات الأقسام الأخرى */
+section {
+    padding: 40px;
+}
+
+.features, .testimonials, .contact {
+    background-color: #fff;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* تخصيص الشات بوت */
+#chatbot-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* تحسين تفاعل الأزرار */
+.contact .cta:hover {
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+}

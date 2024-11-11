@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAIS Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Background section (video instead of image) -->
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="VIDo.mp4" type="video/mp4">
+            <!-- You can add additional formats like WebM or Ogg for better browser compatibility -->
+            <source src="VIDo.webm" type="video/webm">
+            <source src="VIDo.ogv" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+            <h1>SAIS</h1>
+            <p>Ignite Your Equestrian Spirit</p>
+            <a href="#" class="cta">About us</a>
+        </div>
+    </div>
+
+<!-- Welcome Section -->
+    <div class="welcome-section">
+        <h1>Welcome to SAIS</h1>
+        <p>Our journey began with a love for equestrianism and a passion for developing innovative training tools to help riders achieve their best. With the rise of AI, we saw an opportunity to enhance the training experience by providing direct guidance that helps riders improve their skills and avoid common mistakes.</p>
+        <a href="#" class="cta">About us</a>
+    </div>
+
+ <!-- Other Sections -->
+    <section class="features">
+        <h2>Our Mission:</h2>
+        <p>Our mission is to revolutionize horse training by providing accessible, AI-powered guidance that helps horse owners and trainers of all experience levels improve their skills and care for their horses more effectively.</p>
+    </section>
+
+    <section class="testimonials">
+        <h2>Our Vision:</h2>
+        <p>We aim to build a community of riders equipped with the confidence and knowledge needed to train and excel safely and sustainably. We believe that riding skills should be accessible to everyone with a passion for horsemanship, regardless of experience level or location.</p>
+    </section>
+
+<!-- Contact us section with chatbot -->
+    <section class="contact">
+        <h2>Ask SAIS</h2>
+        <p>For more Information</p>
+        
+    <!-- Embed Chatbot -->
+    <div id="chatbot-container"></div>
+    <script>
+        (function() {
+            var script = document.createElement("script");
+            script.src = "https://app.gpt-trainer.com/widget/c97eb19d44db4c52b357f8ab0a655f2b";
+            script.async = true;
+            document.getElementById("chatbot-container").appendChild(script);
+        })();
+    </script>
+    
